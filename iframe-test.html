@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test iframe</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      iframe {
+        position: relative;
+        border: 0;
+        margin: auto;
+        width: 1180px;
+        height: 500px;
+        margin-top: 200px;
+      }
+
+      iframe::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <iframe
+      src="https://vnj-frame.web.app/chon-chuyen-bay"
+      frameborder="0"
+    ></iframe>
+  </body>
+</html>
